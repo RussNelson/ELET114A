@@ -4,18 +4,24 @@
 * has passed CE (HS0000174), FCC (2ACWW13002), BQB (QDID: 59836) Certification
 
 Changes:
+
 2015.01.12 V2.1.1
+
 * increase the measured power data module
 * increase CE, FCC, BQB information
+
 2015.01.27 V2.2
+
 * increase LED and GPIO control in reference to the schematic diagram indicating the status of the Bluetooth connection
+
 2015.01.29 V2.2.1
+
 * updated reference schematics Notes
 
 1. Outline
 
 ELET114A Shenzhen Yi Autopass Technology Co., Ltd. is designed for intelligent wireless data transmission and to create a dual-mode Bluetooth module, follow BT2.1 + EDR / 3.0 / 4.0 Bluetooth specification, branched Bluetooth serial port protocol support SPP, HID, BLE, etc; also do Bluetooth master mode (Host), Connection SPP, HID, BLE device (Device).
-Module integrated ARM® Cortex ™ -M0 US Broadcom (Broadcom) Bluetooth chip, CPU frequency up to 48MHz, rich interface resources, can meet customer demand, tailor Proprietary software system. Supports UART, SPI, I2C, I2S interfaces, including 4 PWM Ports and six 12bit ADC channels, high integration, low power consumption, Bluetooth radio property Can advantageous characteristics.
+Module integrated ARM® Cortex™-M0 US Broadcom (Broadcom) Bluetooth chip, CPU frequency up to 48MHz, rich interface resources, can meet customer demand, tailor Proprietary software system. Supports UART, SPI, I2C, I2S interfaces, including 4 PWM Ports and six 12bit ADC channels, high integration, low power consumption, Bluetooth radio property Can advantageous characteristics.
 
 2. Features
 
@@ -86,7 +92,8 @@ Absolute Maximum Ratings
 
 7. Typical circuit and PIN pin definitions
 
-![alt text](https://github.com/RussNelson/ELET114A/otherdocs/elet114a-schematic2.jpg "ELET114A schematic")
+![alt text](https://github.com/RussNelson/ELET114A/blob/master/otherdocs/elet114a-schematic2.jpg "ELET114A schematic")
+
 | Pin.No | Name | Type | Description
 |---|---|---|---
 | 1 | UART_TX | O | UART transmitted data output pin
@@ -174,7 +181,7 @@ When not in use GPIO directly NC.
 
 8. Module Reference PCB package size
 
-![alt text](https://github.com/RussNelson/ELET114A/otherdocs/elet114a-footprint.png "ELET114A footprint")
+![alt text](https://github.com/RussNelson/ELET114A/blob/master/otherdocs/elet114a-footprint.png "ELET114A footprint")
 Above the yellow border is the area of the 2.4G Bluetooth antenna. The PCB area directly below is subject to the clearance process. Keep the antenna area as much as possible away from metal objects. Usually the Bluetooth module antenna is placed near the edge of the PCB.
 
 9. Measured power data
@@ -189,6 +196,7 @@ Above the yellow border is the area of the 2.4G Bluetooth antenna. The PCB area 
 | BLE connected + Receiving | | 16.34mA | connection interval = 20ms (LE_Connection_Interval_Max = 0x0010)
 
 10. Typical Application
+
 After the Bluetooth 4.0 (BLE) protocol appears Apple IPHONE 4S or later the phone began to support BT4.0,
 Developers can be used directly BT4.0 terminal product development, rather than requiring complex licensing and support Apple MFI
 Pay the appropriate licensing fees, so that a developer iOS Bluetooth peripherals BT4.0 best choice.
