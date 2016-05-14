@@ -25,34 +25,34 @@ Module integrated ARM® Cortex™-M0 US Broadcom (Broadcom) Bluetooth chip, CPU 
 
 2. Features
 
-* support BT3.0 + EDR and BT4.0 (BLE) Dual-Mode, both modes can work simultaneously
-* support low power, sleep (Sleep) current of 50uA
-* Bluetooth (Device) Profile, SPP, HID, BLE, transparent data transmission solutions
-* Bluetooth (Host), can be connected to Bluetooth SPP, HID, BLE and other equipment (Device)
-* support to meet customer demand, tailored proprietary software; CPU frequency up to 48MHz, rich interface resources
-* support high-speed serial interface (UART), maximum support 921600 baud rate
-* support upgrade the air (OTA) firmware to solve the customer's worries
-* module as SMD chip technology, semi-hole pin, ROHS process
-* Built-in 2.4G PCB antenna, users do not need an antenna debugging; also supports external antenna, long-distance transmission
-* adaptive frequency hopping technology, high-performance wireless transceiver system, in open areas, more than 50 meters away from the transceiver
-* Easy to use for close-serial transparent transmission of wireless alternatives, without understanding the Bluetooth protocol specific development
+  * support BT3.0 + EDR and BT4.0 (BLE) Dual-Mode, both modes can work simultaneously
+  * support low power, sleep (Sleep) current of 50uA
+  * Bluetooth (Device) Profile, SPP, HID, BLE, transparent data transmission solutions
+  * Bluetooth (Host), can be connected to Bluetooth SPP, HID, BLE and other equipment (Device)
+  * support to meet customer demand, tailored proprietary software; CPU frequency up to 48MHz, rich interface resources
+  * support high-speed serial interface (UART), maximum support 921600 baud rate
+  * support upgrade the air (OTA) firmware to solve the customer's worries
+  * module as SMD chip technology, semi-hole pin, ROHS process
+  * Built-in 2.4G PCB antenna, users do not need an antenna debugging; also supports external antenna, long-distance transmission
+  * adaptive frequency hopping technology, high-performance wireless transceiver system, in open areas, more than 50 meters away from the transceiver
+  * Easy to use for close-serial transparent transmission of wireless alternatives, without understanding the Bluetooth protocol specific development
 
 3. Applications
 
 This module is mainly used in the field of wireless transmission of data over short distances, it can be easily and PC, smart phones and other non Bluetooth devices on the wireless terminal is connected, it can also exchange data between two modules, to avoid the cumbersome cable connections And space limitations, can be a direct replacement for the serial cable.
-* Bluetooth and RS232 (RS483) serial data conversion
-* Bluetooth wireless data transmission
-* medical and industrial equipment distributed remote control
-* Bluetooth printer, bar code scanning equipment
-* POS system, wireless keyboard, mouse
-* Remote control and monitoring
-* indoor positioning, alarm
-* wireless meter reading, wireless data collection
-* building automation, security, wireless monitoring and control room equipment, access control systems
-* intelligent home, industrial control
-* automotive testing equipment
-* wireless LED display system, touch screen equipment
-* Bluetooth joystick, Bluetooth game pad, Bluetooth remote control, remote control toys
+  * Bluetooth and RS232 (RS483) serial data conversion
+  * Bluetooth wireless data transmission
+  * medical and industrial equipment distributed remote control
+  * Bluetooth printer, bar code scanning equipment
+  * POS system, wireless keyboard, mouse
+  * Remote control and monitoring
+  * indoor positioning, alarm
+  * wireless meter reading, wireless data collection
+  * building automation, security, wireless monitoring and control room equipment, access control systems
+  * intelligent home, industrial control
+  * automotive testing equipment
+  * wireless LED display system, touch screen equipment
+  * Bluetooth joystick, Bluetooth game pad, Bluetooth remote control, remote control toys
 
 4. Physical characteristics
 
@@ -88,8 +88,6 @@ Absolute Maximum Ratings
 | Host Interface | UART serial ports (CMOS, TTL level)
 | Interface signals | RX, TX, CTS, RTS
 
-
-
 7. Typical circuit and PIN pin definitions
 
 ![alt text](https://github.com/RussNelson/ELET114A/blob/master/otherdocs/elet114a-schematic2.jpg "ELET114A schematic")
@@ -103,7 +101,6 @@ Absolute Maximum Ratings
 | 4 | UART_RTS | I/O | UART request input pin
 ||||    General purpose digital input and output pin
 | 5 | AIO1 | I/O | BT_WAKEUP, digital input pin, MCU (customer controls) Bluetooth module wakeup
-Piece
 ||||    0: low level (LOW) Bluetooth module into the power-saving sleep mode
 ||||    1: high level (HIGH) wake Bluetooth module
 ||||    Note: When the MCU to send data to a Bluetooth module, the first BT_WAKEUP
@@ -114,8 +111,7 @@ Piece
 ||||    1: high level (HIGH), the command mode (Command mode)
 ||||    Note: When the Bluetooth module in the connected state, this pin is useful; when in Bluetooth module
 ||||    Non-connected state, are in command mode
-| 7 | AIO3 | I/O | HOST_WAKEUP, digital output pin, a Bluetooth module wakeup MCU (customer control
-Device)
+| 7 | AIO3 | I/O | HOST_WAKEUP, digital output pin, a Bluetooth module wakeup MCU (customer control Device)
 ||||    0: output low (LOW), indicates that the serial data is not sent to the MCU
 ||||    1: output high (HIGH), indicates the serial port has data to send to the MCU
 ||||    Note: When the Bluetooth module has sent data to the MCU, this pin will be from a low level (LOW)
@@ -177,7 +173,7 @@ Device)
 ||||    PWM0: PWM output
 | 34 | BIO11 | I/O | General purpose digital input and output pin,
 ||||    PWM1: PWM output
-When not in use GPIO directly NC.
+When not in use leave GPIO disconnected.
 
 8. Module Reference PCB package size
 
