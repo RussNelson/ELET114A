@@ -79,7 +79,7 @@ Changes:
   | Supply Voltage: VDD | 2.2V | 3.6V
   | Other Terminal Voltages | VSS-0.3V | VDD + 0.3V
   
-  6. Interface Specification
+6. Interface Specification
   
   | | |
   |---|---|---
@@ -88,7 +88,7 @@ Changes:
   | Host Interface | UART serial ports (CMOS, TTL level)
   | Interface signals | RX, TX, CTS, RTS
   
-  7. Typical circuit and PIN pin definitions
+7. Typical circuit and PIN pin definitions
   
   ![alt text](https://github.com/RussNelson/ELET114A/blob/master/otherdocs/elet114a-schematic2.jpg "ELET114A schematic")
   
@@ -119,10 +119,10 @@ Changes:
   | 8 | AIO4 | I/O | General purpose digital input and output pin,
   ||||    PWM2: PWM output
   | 9 | ICE_DATA | I/O | Serial data pin debugger
-  | 10 | ICE_CLK I debugger serial clock pin
-  | 11 | RESET # I External reset input, active low with internal pullup
-  | 12 | VCC Power 3.3V external power input
-  | 13 | GND0 Ground Ground
+  | 10 | ICE_CLK | I | debugger serial clock pin
+  | 11 | RESET # | I | External reset input, active low with internal pullup
+  | 12 | VCC Power | 3.3V | external power input
+  | 13 | GND0 | Ground | Ground
   | 14 | AIO5 | I/O | General purpose digital input and output pin,
   ||||    ADC4: ADC analog input
   | 15 | AIO6 | I/O | General purpose digital input and output pin,
@@ -130,10 +130,10 @@ Changes:
   | 16 | AIO7 | I/O | SPI slave select pin
   ||||    General purpose digital input and output pin
   ||||    I2S channel around the clock
-  | 17 | AIO8 O SPI MOSI (master output, slave input)
+  | 17 | AIO8 | O | SPI MOSI (master output, slave input)
   ||||    General purpose digital input and output pin
   ||||    I2S data output
-  | 18 | AIO9 I SPI MISO (master input, slave output)
+  | 18 | AIO9 | I | SPI MISO (master input, slave output)
   ||||    General purpose digital input and output pin
   ||||    I2S data input
   | 19 | AIO10 | I/O | SPI Serial Clock pin
@@ -142,8 +142,8 @@ Changes:
   | 20 | AIO11 | I/O | General purpose digital input and output pin,
   ||||    PWM3: PWM output pin
   ||||    I2SMCLK: I2S master clock output pin
-  | 21 | GND1 Ground Ground
-  | 22 | GND2 Ground Ground
+  | 21 | GND1 | Ground | Ground
+  | 22 | GND2 | Ground | Ground
   | 23 | BIO0 | I/O | General purpose digital input and output pin,
   ||||    ADC5: ADC analog input
   | 24 | BIO1 | I/O | General purpose digital input and output pin,
