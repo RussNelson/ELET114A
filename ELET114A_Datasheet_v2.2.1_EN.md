@@ -1,6 +1,5 @@
-elinketone ELET114A EasyLink ETS
-URL: http: //www.elinketone.com 1/9 2015-01-29
 # ELET114A dual-mode (Dual Mode) Bluetooth module
+* made by www.elinketone.com
 * supports Bluetooth 3.0 / 2.1 + EDR and 4.0 (BLE) specification
 * has passed CE (HS0000174), FCC (2ACWW13002), BQB (QDID: 59836) Certification
 
@@ -14,10 +13,12 @@ Changes:
 * updated reference schematics Notes
 
 1. Outline
+
 ELET114A Shenzhen Yi Autopass Technology Co., Ltd. is designed for intelligent wireless data transmission and to create a dual-mode Bluetooth module, follow BT2.1 + EDR / 3.0 / 4.0 Bluetooth specification, branched Bluetooth serial port protocol support SPP, HID, BLE, etc; also do Bluetooth master mode (Host), Connection SPP, HID, BLE device (Device).
 Module integrated ARM® Cortex ™ -M0 US Broadcom (Broadcom) Bluetooth chip, CPU frequency up to 48MHz, rich interface resources, can meet customer demand, tailor Proprietary software system. Supports UART, SPI, I2C, I2S interfaces, including 4 PWM Ports and six 12bit ADC channels, high integration, low power consumption, Bluetooth radio property Can advantageous characteristics.
 
 2. Features
+
 * support BT3.0 + EDR and BT4.0 (BLE) Dual-Mode, both modes can work simultaneously
 * support low power, sleep (Sleep) current of 50uA
 * Bluetooth (Device) Profile, SPP, HID, BLE, transparent data transmission solutions
@@ -31,6 +32,7 @@ Module integrated ARM® Cortex ™ -M0 US Broadcom (Broadcom) Bluetooth chip, CP
 * Easy to use for close-serial transparent transmission of wireless alternatives, without understanding the Bluetooth protocol specific development
 
 3. Applications
+
 This module is mainly used in the field of wireless transmission of data over short distances, it can be easily and PC, smart phones and other non Bluetooth devices on the wireless terminal is connected, it can also exchange data between two modules, to avoid the cumbersome cable connections And space limitations, can be a direct replacement for the serial cable.
 * Bluetooth and RS232 (RS483) serial data conversion
 * Bluetooth wireless data transmission
@@ -47,6 +49,9 @@ This module is mainly used in the field of wireless transmission of data over sh
 * Bluetooth joystick, Bluetooth game pad, Bluetooth remote control, remote control toys
 
 4. Physical characteristics
+
+| | |
+|---|---
 | Operating Frequency Band | 2.4GHz-2.48GHz unlicensed ISM band
 | Bluetooth Specification | V2.1 + EDR, BT3.0, BT4.0 (BLE)
 | Output Power Class | Programmable Class 1, Class 2 or Class 3
@@ -58,14 +63,20 @@ This module is mainly used in the field of wireless transmission of data over sh
 | Dimension | 27mm (L) x 13mm (W) x 2mm (H)
 
 5. Electrical Characteristics
+
 Absolute Maximum Ratings
+
 | Rating | Min | Max
+|---|---|---
 | Storage Temperature | -40 ℃ | + 85 ℃
 | Operating Temperature | -30 ℃ | + 85 ℃
 | Supply Voltage: VDD | 2.2V | 3.6V
 | Other Terminal Voltages | VSS-0.3V | VDD + 0.3V
 
 6. Interface Specification
+
+| | |
+|---|---|---
 | Normal Power Supply: | + 3.3V
 | Operating Current: | <20mA (average)
 | Host Interface | UART serial ports (CMOS, TTL level)
@@ -74,8 +85,10 @@ Absolute Maximum Ratings
 
 
 7. Typical circuit and PIN pin definitions
+
 ![alt text](https://github.com/RussNelson/ELET114A/otherdocs/elet114a-schematic2.jpg "ELET114A schematic")
 | Pin.No | Name | Type | Description
+|---|---|---|---
 | 1 | UART_TX | O | UART transmitted data output pin
 | 2 | UART_RX | I | UART received data input pin
 | 3 | UART_CTS | I/O | UART clear to send input pin
@@ -160,12 +173,14 @@ Device)
 When not in use GPIO directly NC.
 
 8. Module Reference PCB package size
-'/home/nelson/elet114a/elet114a-footprint.png'
+
 ![alt text](https://github.com/RussNelson/ELET114A/otherdocs/elet114a-footprint.png "ELET114A footprint")
 Above the yellow border is the area of the 2.4G Bluetooth antenna. The PCB area directly below is subject to the clearance process. Keep the antenna area as much as possible away from metal objects. Usually the Bluetooth module antenna is placed near the edge of the PCB.
 
 9. Measured power data
+
 | Operation | Peak Current | Average Current | Note
+|---|---|---|---
 ||  ELET114A | ELET114A |
 | Disconnected ||  0.05mA
 | Class BR / EDR connected + Sniff | | 2.19mA | No data was transmitted, Sniff (40 20 4 0)
